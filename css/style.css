@@ -8,49 +8,66 @@ html, body {
 }
 
 body {
-	font-family: "futura";
+	font-family: "MTTMilano";
 	font-size: 16px;
 	color: #ffffff;
 	background-color: #000000;
 }
 
+::selection {
+  background: #333;
+}
+::-moz-selection {
+  background: #333;
+} 
+
 .wrap {
 	position: relative;
-	height: 100%; width: 100%;
-	background-image: url(../images/vik.jpg);
+	height: 100%;
+	background-image: url(../images/skate.jpg);
 	background-size: cover; 
-	background-position: center bottom;
+	background-position: center center;
 }
 
-.container {
-	display: inline-block;
-	height: 594px; width: 550px;
+.hero-container {
 	position: absolute;
 	top: 50%; left: 50%;
-	margin: -297px 0 0 -275px;
+	margin: -157.5px 0 0 -275px;
 }
 
-.intro img {
+.hero img {
 	height: 200px;
 	margin: 0 0 60px 0;
 }
 
 h1 {
-	font-size: 60px;
+	font-weight: 900;
+	font-size: 4vw;
 	text-transform: uppercase;
 	letter-spacing: 3px;	
 }
 
 p {
-	font-size: 20px;
+	font-weight: 600;
+	font-size: 2vw;
 	line-height: 1.5;
 	margin: 30px 0;
 }
 
-.intro {
+.hero {
 	text-align: center;
 	width: 550px;
 	margin: 0 auto;
+}
+
+.intro {
+	height: 100%;
+}
+
+.intro-content {
+	height: 100%; width: 100%;
+	overflow: scroll;
+	padding: 40px;
 }
 
 .subscribe {
@@ -107,6 +124,7 @@ input[type="submit"] {
 	width: 150px;
 	padding: 0 0 15px 5px;
 	color: #fff;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	cursor: pointer;
